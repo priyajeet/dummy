@@ -10,10 +10,10 @@ module.exports = {
         filename: 'dist/[name].js'
     },
     resolve: {
-        modules: ['node_modules']
+        modules: ['src', 'node_modules']
     },
     resolveLoader: {
-        modules: [path.resolve('node_modules')]
+        modules: [path.resolve('src'), path.resolve('node_modules')]
     },
     module: {
         rules: [

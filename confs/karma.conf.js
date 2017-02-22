@@ -3,7 +3,7 @@ const webpackConfig = require('./webpack.config');
 module.exports = (config) => config.set({
     autoWatch: false,
 
-    basePath: '.',
+    basePath: '..',
 
     browsers: ['PhantomJS'],
 
@@ -16,10 +16,10 @@ module.exports = (config) => config.set({
     coverageReporter: {
         check: {
             global: {
-                statements: 10, // 95
-                branches: 10, // 95
-                functions: 10, // 93
-                lines: 10 // 90
+                statements: 30,
+                branches: 30,
+                functions: 30,
+                lines: 30
             }
         },
         reporters: [

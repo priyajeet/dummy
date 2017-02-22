@@ -31,10 +31,11 @@
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.2",
     "mocha": "^3.2.0",
+    "query-string": "^4.3.2",
     "webpack": "^2.2.1"
   },
   "scripts": {
-    "test": "NODE_ENV=test ./node_modules/.bin/karma start",
-    "build": "BABEL_ENV=dev NODE_ENV=dev ./node_modules/.bin/webpack --progress --colors"
+    "test": "NODE_ENV=test ./node_modules/.bin/karma start confs/karma.conf.js",
+    "build": "BABEL_ENV=dev NODE_ENV=dev ./node_modules/.bin/webpack --progress --colors --config build/webpack.config.js"
   }
 }

@@ -9,7 +9,7 @@ describe('bar()', () => {
         bar.__ResetDependency__('foo');
     });
 
-    it('should return 15', () => {
-        expect(bar()).to.equal(15);
+    it('should return 25', () => {
+        expect(bar()).to.equal(10);
     });
 });
