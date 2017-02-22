@@ -36,6 +36,6 @@
   },
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/.bin/karma start confs/karma.conf.js",
-    "build": "BABEL_ENV=dev NODE_ENV=dev ./node_modules/.bin/webpack --progress --colors --config build/webpack.config.js"
+    "build": "BABEL_ENV=dev NODE_ENV=dev ./node_modules/.bin/webpack --progress --colors --config confs/webpack.config.js"
   }
 }
