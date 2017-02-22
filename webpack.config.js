@@ -7,7 +7,7 @@ module.exports = {
         compiled: path.resolve('src/bar.js')
     },
     output: {
-        filename: '[name].js'
+        filename: 'dist/[name].js'
     },
     resolve: {
         modules: ['node_modules']
